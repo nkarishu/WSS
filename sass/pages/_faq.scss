@@ -1,0 +1,199 @@
+.faq-mv {
+    width: auto;
+    height: 724px;
+    background: url(../images/faq.jpg) center center / cover;
+}
+
+.faq-main {
+    position: relative;
+    width: auto;
+    margin: -120px 0 0 120px;
+    padding: 0 0 120px 120px;
+    background: rgb(255, 255, 255);
+}
+
+.faq-question {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__box-homebtn {
+        margin-right: 120px;
+    }
+    &__box-homelink {
+        text-decoration: none;
+        color: #000;
+        transition: all .4s;
+        &:hover {
+            color: $color-hover;
+        }
+    }
+    &__box-ttl {
+        margin-bottom: 100px;
+        padding-top: 100px;
+        font-size: 40px;
+        font-family: $font-ttl;
+        text-align: left;
+    }
+    &__txt {
+        margin-bottom: 100px;
+        padding-left: 120px;
+    }
+}
+
+.faq-faqlist {
+    margin-right: 100px;
+    font-weight: bold;
+    &__ttl {
+        margin-bottom: 60px;
+        font-size: 32px;
+        font-family: $font-ttl;
+        text-align: left;
+    }
+    &__q {
+        position: relative;
+        padding: 20px 40px 20px 120px;
+        background: $color-faq-q;
+        color: #000000;
+        font-size: 18px;
+        &:before {
+            content: 'Q';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            
+            border-right: 1px solid #fff;
+            background: $color-faq-q;
+            color: rgb(0, 0, 0);
+            font-size: 42px;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+    }
+
+
+
+    &__a {
+        position: relative;
+        margin-top: 1px;
+        margin-bottom: 80px;
+        padding: 20px 40px 22px 120px;
+        background: $color-faq-a;
+        font-size: 16px;
+        letter-spacing: .02em;
+        &:before {
+            content: 'A';
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            
+            border-right: 1px solid #fff;
+            background: $color-faq-a;
+            color: #000000;
+            font-size: 42px;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+    }
+
+    &__a-02{
+        position: relative;
+        margin-top: 1px;
+        margin-bottom: 80px;
+        padding: 20px 40px 22px 120px;
+        background: $color-faq-a;
+        font-size: 16px;
+        letter-spacing: .02em;
+        &:before {
+            content: 'A';
+            display: flex;
+            justify-content: center;
+            // align-items: center; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            padding-top: 5px;
+            border-right: 1px solid #fff;
+            background: $color-faq-a;
+            color: #000000;
+            font-size: 42px;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-align: center;
+        }
+    }
+}
+
+// リンクボタン
+.faq-faqlist__btn {
+    width: 327px;
+    height: 57px;
+    margin: 0 auto 26px;
+    padding-top: 26px;
+}
+
+.faq-faqlist__a__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 13px 0;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    transition: all .4s;
+    &:hover {
+        color: $color-hover;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url(../images/icon-link.png) center center / cover;
+        margin-left: 20px;
+        margin-top: -2px;
+    }
+}
+
+.faq-faqlist__a__link02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 13px 0;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    transition: all .4s;
+    &:hover {
+        color: $color-hover;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 16.6px;
+        height: 14px;
+        background: url(../images/icon-tw.png) center center / contain;
+        margin-left: 20px;
+        margin-top: -2px;
+    }
+}

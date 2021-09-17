@@ -1,0 +1,119 @@
+    .gnav {
+        
+       
+        text-align: center;
+        &__nav {
+            display: flex;
+            align-items: center;
+        }
+        &__list {
+            //下層の基準点
+            position: relative;
+            margin-right: 24px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &__link {
+            display: block;
+            color: $color-w;
+            text-decoration: none;
+            padding: 15px 10px;
+            transition: all .4s;
+            &:hover {
+                color: $color-headerhover;
+            }
+        }
+        &__child-txt {
+            position: relative;
+            transition: all .4s;
+            &:hover {
+                color: $color-headerhover;
+            }
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 22px;
+                left: 84px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: url(../images/tri.png) center center / cover;
+               
+                
+            }
+
+
+        }
+     
+        &__child-link {
+            padding: 5px 0 0;
+        }
+        &__child-nav {
+            /*サブメニューの位置*/
+            position: absolute;
+            left: 5px;
+            top: 55px;
+            z-index: 4;
+            /*サブメニューボックスの形*/
+             background: $color-main;
+             //background: rgba(0, 0, 0, 0.5);
+            width: 120px;
+            height: 120px;
+            /*はじめは非表示にしておく*/
+            visibility: hidden;
+            opacity: 0;
+            /*アニメーション設定*/
+            transition: all .4s;
+        }
+        &__child-list {
+            text-align: left;
+            padding:15px 0 10px 5px;
+
+        }
+        //サブメニューの文字設定
+        &__child-link {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            //padding: 5px 5px;
+            font-size: 14px;
+            transition: all .4s;
+            &:hover {
+                color: $color-headerhover;
+            }
+        }
+        //お問い合わせ項目
+        &__list-contact {
+            display: block;
+            background: rgb(255, 255, 255);
+            text-align: center;
+        }
+        &__link-contact {
+            display: block;
+            color: $color-main;
+            text-decoration: none;
+            padding: 5px 35px;
+            transition: all .4s;
+            &:hover {
+                background: $color-header;
+            }
+        }
+    }
+    
+    //sassでの記載方法がわからなかった。メニューの職業訓練をホバーすると、
+    //非表示にしていたサブメニューを出現させる記述
+    .gnav__child:hover>.gnav__child-nav,
+    .gnav__child:active>.gnav__child-nav,
+    .gnav__child-list:hover>.gnav__child-nav,
+    .gnav__child-list:active>.gnav__child-nav {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .gnav__child-nav.scroll02{
+        background:$color-header;
+        top: 66px;
+    }

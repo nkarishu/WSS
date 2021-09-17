@@ -1,0 +1,106 @@
+
+.footer__pic{
+    height: 830px;
+    background: url(../images/footer.jpg) center center / cover fixed;
+}
+
+
+
+
+.footer {
+
+    margin-top: -100px;
+    font-size: 14px;
+ 
+
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        width: 1220px;
+        margin: -95px 0 50px auto;
+        padding: 40px 0 0px 50px;
+        background: #5DC1CF;
+        color: $color-w;
+        text-align: left;
+        transition: all .4s;
+        text-decoration: none;
+        &:hover {
+            background: #71ccd8f8;         
+        }
+
+        &-link{
+            text-decoration: none;
+        } 
+        
+
+    }
+
+    &__contact-box {
+        width: 1150px;     
+        
+    }
+
+    
+    
+
+    
+
+    &__contact-ttl {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-family: $font-ttl;
+        color: #fff;
+    }
+    
+    &__contact-txt {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 70px;
+    }
+    &__container-logo {
+        width: 107px;
+        height: 45px;
+        margin: 0 25px;
+    }
+    &__container-link {
+        text-decoration: none;
+        color: $color-b;
+        transition: all .4s;
+        &:hover {
+            color: $color-hover;
+        }
+    }
+    &__container-img {
+        width: 100%;
+        height: 100%;
+    }
+    &__box-txt {
+        padding: 0px 80px;
+    }
+    &__box-txt-copy {
+        //margin: 0 auto;
+        padding: 5px 0 0 400px;
+    }
+    &__box-link {
+        text-decoration: none;
+        color: $color-b;
+        transition: all .4s;
+        &:hover {
+            color: $color-hover;
+        }
+    }
+    &__icon {
+        font-size: 1.2em;
+        padding-left: 600px;
+    }
+    &__icon-link {
+        color: black;
+    }
+}
